@@ -1,0 +1,8 @@
+# KEVShift runtime and test dependencies.
+# Each line is "package>=minimum,<next_major": it accepts any compatible version
+# but blocks a future major release that could break the project.
+
+streamlit>=1.50,<2
+pandas>=2.0,<4
+requests>=2.31,<3
+pytest>=8.0,<10
