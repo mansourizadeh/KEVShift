@@ -1,0 +1,38 @@
+Step 1 - 1 October: KEV snapshot A stored, then scan 1 imported
+===============================================================
+Summary: First observed KEV match: 1, Needs manual review: 1, No KEV match: 3
+
+[First observed KEV match] web-server-01 | CVE-2099-0002 | scan 2025-10-01 | status open
+    CVE-2099-0002 was reported on web-server-01 in the scan dated 2025-10-01 (status: open). KEV
+    snapshot 2025.10.01-synthetic (retrieved 2025-10-01) lists it (CISA date added: 2025-09-20). No
+    earlier KEV snapshot is stored, so KEVShift cannot tell whether the entry is new; this is only
+    the first observed match. This does not show that web-server-01 was attacked or is exploitable.
+    Next step: Verify that the finding applies to web-server-01 and prioritize it for review.
+    Refresh the catalog later so future changes can be compared.
+
+[Needs manual review] app-server-03 | CVE-2099-0002 | scan 2025-10-01 | status mitigated
+    CVE-2099-0002 on app-server-03 (scan dated 2025-10-01) is listed in KEV, but the finding's
+    recorded status is 'mitigated'. KEV snapshot 2025.10.01-synthetic (retrieved 2025-10-01) lists
+    it (CISA date added: 2025-09-20). No earlier snapshot is stored, so it is only a first observed
+    match. A KEV-listed CVE with a status other than 'open' is uncertain: the status may be
+    outdated. This does not show that app-server-03 was attacked or is exploitable.
+    Next step: Manually verify that the recorded status 'mitigated' is still justified (for example
+    that the mitigation is in place or the finding really is a false positive).
+
+[No KEV match] app-server-03 | CVE-2099-0004 | scan 2025-10-01 | status open
+    CVE-2099-0004 is reported on app-server-03 in the scan dated 2025-10-01 (status: open) but is
+    not listed in KEV snapshot 2025.10.01-synthetic (retrieved 2025-10-01). Absence from KEV does
+    not mean the vulnerability is harmless; KEV only lists CVEs with documented exploitation.
+    Next step: No KEV-driven action. Handle it under your normal vulnerability-management process.
+
+[No KEV match] db-server-02 | CVE-2099-0003 | scan 2025-10-01 | status open
+    CVE-2099-0003 is reported on db-server-02 in the scan dated 2025-10-01 (status: open) but is not
+    listed in KEV snapshot 2025.10.01-synthetic (retrieved 2025-10-01). Absence from KEV does not
+    mean the vulnerability is harmless; KEV only lists CVEs with documented exploitation.
+    Next step: No KEV-driven action. Handle it under your normal vulnerability-management process.
+
+[No KEV match] web-server-01 | CVE-2099-0001 | scan 2025-10-01 | status open
+    CVE-2099-0001 is reported on web-server-01 in the scan dated 2025-10-01 (status: open) but is
+    not listed in KEV snapshot 2025.10.01-synthetic (retrieved 2025-10-01). Absence from KEV does
+    not mean the vulnerability is harmless; KEV only lists CVEs with documented exploitation.
+    Next step: No KEV-driven action. Handle it under your normal vulnerability-management process.

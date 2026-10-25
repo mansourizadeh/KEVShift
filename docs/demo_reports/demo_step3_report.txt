@@ -1,0 +1,45 @@
+Step 3 - 22 October: scan 2 (comparable) imported
+=================================================
+Summary: Newly added to KEV: 1, Needs manual review: 1, Still present and listed in KEV: 1, Not observed in latest scan: 1, No KEV match: 1
+
+[Newly added to KEV] web-server-01 | CVE-2099-0001 | scan 2025-10-22 | status open
+    CVE-2099-0001 was reported on web-server-01 in the scan dated 2025-10-22 (status: open). KEV
+    snapshot 2025.10.15-synthetic (retrieved 2025-10-15) lists it (CISA date added: 2025-10-14), but
+    the earlier snapshot 2025.10.01-synthetic (retrieved 2025-10-01) did not list it. This is a
+    catalog change, not a scan change. This does not show that web-server-01 was attacked or is
+    exploitable. It shows that exploitation of this CVE has been documented.
+    Next step: Verify that this finding still applies to web-server-01 (affected version,
+    configuration, exposure), then prioritize it and record the outcome.
+
+[Needs manual review] app-server-03 | CVE-2099-0002 | scan 2025-10-22 | status mitigated
+    CVE-2099-0002 on app-server-03 (scan dated 2025-10-22) is listed in KEV, but the finding's
+    recorded status is 'mitigated'. KEV snapshot 2025.10.15-synthetic (retrieved 2025-10-15) lists
+    it (CISA date added: 2025-09-20). It was already listed in snapshot 2025.10.01-synthetic
+    (retrieved 2025-10-01). A KEV-listed CVE with a status other than 'open' is uncertain: the
+    status may be outdated. This does not show that app-server-03 was attacked or is exploitable.
+    Next step: Manually verify that the recorded status 'mitigated' is still justified (for example
+    that the mitigation is in place or the finding really is a false positive).
+
+[Still present and listed in KEV] web-server-01 | CVE-2099-0002 | scan 2025-10-22 | status open
+    CVE-2099-0002 is reported on web-server-01 in the latest scan dated 2025-10-22 (status: open).
+    KEV snapshot 2025.10.15-synthetic (retrieved 2025-10-15) lists it (CISA date added: 2025-09-20).
+    It was already listed in the earlier snapshot 2025.10.01-synthetic (retrieved 2025-10-01), so
+    this is a continuing match, not a new catalog change. This does not show that web-server-01 was
+    attacked or is exploitable.
+    Next step: Confirm the finding's current status and that a remediation or mitigation decision is
+    tracked.
+
+[Not observed in latest scan] db-server-02 | CVE-2099-0003 | scan 2025-10-01 | status open
+    CVE-2099-0003 was reported on db-server-02 in the scan dated 2025-10-01 (status: open) but does
+    not appear in the later comparable scan dated 2025-10-22 (group: internal-weekly (synthetic)).
+    Absence from a scan is not evidence of a change on the asset: scan coverage, configuration,
+    credentials, timing or a renamed asset can all explain it. No finding for db-server-02 appears
+    in the later scan at all, which often indicates the asset was not covered by it.
+    Next step: Re-run a scan with the same profile and coverage, or check the asset manually, before
+    changing the finding's status.
+
+[No KEV match] app-server-03 | CVE-2099-0004 | scan 2025-10-22 | status open
+    CVE-2099-0004 is reported on app-server-03 in the scan dated 2025-10-22 (status: open) but is
+    not listed in KEV snapshot 2025.10.15-synthetic (retrieved 2025-10-15). Absence from KEV does
+    not mean the vulnerability is harmless; KEV only lists CVEs with documented exploitation.
+    Next step: No KEV-driven action. Handle it under your normal vulnerability-management process.

@@ -1,0 +1,44 @@
+{
+  "description": "REAL CISA Known Exploited Vulnerabilities catalog snapshots, unmodified, extracted byte-for-byte from the git history of CISA's own repository.",
+  "not_fetched_from": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json (blocked in the authoring environment); the repository is CISA's official mirror of the same file.",
+  "retrieved_on": "2026-10-25",
+  "license": "CC0 1.0 (see LICENSE_CC0_CISA_KEV.txt)",
+  "files": [
+    {
+      "file": "cisa_kev_2026-10-01.json",
+      "sha256": "4e47d6936857ccf0994d2abe1d77d7421bf14e45ff908cc0d8973fe7adc35140",
+      "bytes": 1762387,
+      "catalogVersion": "2026.10.01",
+      "dateReleased": "2026-10-01T19:54:04.9308Z",
+      "entries": 1731,
+      "source_repository": "https://github.com/cisagov/kev-data",
+      "source_path": "known_exploited_vulnerabilities.json",
+      "source_commit": "a25b61fbc5e3125030a15e09adba33f427cc0e25",
+      "source_commit_time": "2026-10-01T21:35:08+00:00"
+    },
+    {
+      "file": "cisa_kev_2026-10-15.json",
+      "sha256": "0a4807c44c302e6c3f8ba5adbcd45f8163514f52059f636ad9048728cf0c57b8",
+      "bytes": 1789360,
+      "catalogVersion": "2026.10.15",
+      "dateReleased": "2026-10-15T17:00:11.2795Z",
+      "entries": 1746,
+      "source_repository": "https://github.com/cisagov/kev-data",
+      "source_path": "known_exploited_vulnerabilities.json",
+      "source_commit": "7923b5f7040256ca9887d268b4c2a02453a2ff30",
+      "source_commit_time": "2026-10-15T18:02:52+00:00"
+    },
+    {
+      "file": "cisa_kev_2026-10-23.json",
+      "sha256": "97a6e54bc74c651ab3c55657191db9adec6c63b05ca54e4205327cfd97a8fb70",
+      "bytes": 1807090,
+      "catalogVersion": "2026.10.23",
+      "dateReleased": "2026-10-23T19:30:18.9209Z",
+      "entries": 1756,
+      "source_repository": "https://github.com/cisagov/kev-data",
+      "source_path": "known_exploited_vulnerabilities.json",
+      "source_commit": "b9c486ef8f3ba0709bb662ae843ffee96953c400",
+      "source_commit_time": "2026-10-23T21:52:46+00:00"
+    }
+  ]
+}

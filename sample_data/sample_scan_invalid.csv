@@ -1,0 +1,8 @@
+asset_name,cve_id,scan_date,finding_status
+web-server-01,  cve-2099-0001 ,2025-10-01,open
+web-server-01,CVE-2099-0001,2025-10-01,open
+db-server-02,CVE-99-12,2025-10-01,open
+,CVE-2099-0004,2025-10-01,open
+app-server-03,CVE-2099-0004,01/10/2025,open
+app-server-03,CVE-2099-0005,2025-10-01,fixed
+mail-server-04,CVE-2099-0006,2025-10-01,Open

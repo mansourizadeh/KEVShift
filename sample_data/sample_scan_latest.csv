@@ -1,0 +1,5 @@
+asset_name,cve_id,scan_date,finding_status
+web-server-01,CVE-2099-0001,2025-10-22,open
+web-server-01,CVE-2099-0002,2025-10-22,open
+app-server-03,CVE-2099-0004,2025-10-22,open
+app-server-03,CVE-2099-0002,2025-10-22,mitigated

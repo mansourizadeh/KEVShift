@@ -1,0 +1,34 @@
+{
+  "title": "SYNTHETIC DEMO DATA - not the real CISA catalog",
+  "catalogVersion": "2025.10.01-synthetic",
+  "dateReleased": "2025-10-01T08:00:00.000Z",
+  "count": 2,
+  "vulnerabilities": [
+    {
+      "cveID": "CVE-2099-0002",
+      "vendorProject": "ExampleVendor (synthetic)",
+      "product": "ExampleWebApp (synthetic)",
+      "vulnerabilityName": "ExampleWebApp Synthetic Remote Code Execution",
+      "dateAdded": "2025-09-20",
+      "shortDescription": "Synthetic record for KEVShift demonstration. Not a real vulnerability.",
+      "requiredAction": "Synthetic demo: verify and prioritize.",
+      "dueDate": "2025-10-11",
+      "knownRansomwareCampaignUse": "Unknown",
+      "notes": "SYNTHETIC",
+      "cwes": []
+    },
+    {
+      "cveID": "CVE-2099-0900",
+      "vendorProject": "ExampleVendor (synthetic)",
+      "product": "ExampleRouter (synthetic)",
+      "vulnerabilityName": "ExampleRouter Synthetic Authentication Bypass",
+      "dateAdded": "2025-08-15",
+      "shortDescription": "Synthetic record for KEVShift demonstration. Not a real vulnerability.",
+      "requiredAction": "Synthetic demo: verify and prioritize.",
+      "dueDate": "2025-09-05",
+      "knownRansomwareCampaignUse": "Unknown",
+      "notes": "SYNTHETIC",
+      "cwes": []
+    }
+  ]
+}
